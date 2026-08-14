@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Xcode local state and build products
+build/
+DerivedData/
+dist/
+*.xcarchive
+*.xcresult
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Local coding-agent settings
+.claude/
+.codex/
+
+# Generated disk images
+*.dmg
+*.sparseimage
+*.sparsebundle
