@@ -158,6 +158,15 @@ Setapp 及其他第三方软件平台，都必须事先取得许可方书面同�
 再次分发时必须同时保留[完整许可证](LICENSE)、[必要声明](NOTICE)及
 [商业授权政策](COMMERCIAL-LICENSE.md)。
 
+## Community & contact / 社区与联系
+
+Join the [DMGplayer Telegram group](https://t.me/+VgJZ4WVXxAFjZTRl) to discuss
+usage, report problems, suggest features, or contact the developer about other
+project needs.
+
+欢迎加入 [DMGplayer Telegram 群聊](https://t.me/+VgJZ4WVXxAFjZTRl)。使用咨询、
+问题反馈、功能建议以及其他项目需求，都可以在群内联系开发者。
+
 ## Contributing / 参与贡献
 
 Issues and pull requests are welcome. Please include focused changes, keep local
