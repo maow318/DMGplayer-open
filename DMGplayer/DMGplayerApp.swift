@@ -40,7 +40,7 @@ struct DMGplayerApp: App {
                 .environment(\.locale, languageStore.locale)
         }
         .defaultPosition(.center)
-        .defaultSize(width: 360, height: 282)
+        .defaultSize(width: 360, height: 382)
         .windowResizability(.contentSize)
         .windowStyle(.hiddenTitleBar)
         .environmentObject(languageStore)

@@ -1,0 +1,49 @@
+name: Commercial license request
+description: Request written authorization for commercial use or marketplace distribution.
+title: "[Commercial License] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to start a commercial licensing discussion. Do not include confidential information, personal identifiers, payment details, credentials, or unpublished business information in this public issue.
+  - type: dropdown
+    id: applicant_type
+    attributes:
+      label: Applicant type
+      options:
+        - Individual
+        - Company or organization
+    validations:
+      required: true
+  - type: textarea
+    id: intended_use
+    attributes:
+      label: Intended commercial use
+      description: Describe the product, service, distribution method, and whether DMGplayer will be modified.
+      placeholder: We want to use or distribute DMGplayer for...
+    validations:
+      required: true
+  - type: input
+    id: marketplaces
+    attributes:
+      label: Stores or distribution platforms
+      description: List any planned stores, marketplaces, websites, or other distribution channels.
+      placeholder: Mac App Store, Setapp, company website, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: monetization
+    attributes:
+      label: Monetization model
+      description: Describe pricing, subscriptions, advertising, bundling, paid support, or other revenue connected to the proposed use.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand that submitting this request does not grant commercial permission.
+          required: true
+        - label: I will wait for written authorization and satisfy all stated conditions, including any applicable licensing fee, before commercial use or submission.
+          required: true

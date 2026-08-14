@@ -128,24 +128,33 @@ DMGplayer is licensed under the
 [PolyForm Noncommercial License 1.0.0](LICENSE).
 
 This is a **source-available, noncommercial** license rather than an open-source
-license. Personal, educational, research, charitable, and other noncommercial
-uses permitted by the license are welcome. Commercial sale, paid distribution,
-or offering DMGplayer as part of a commercial product or service requires a
-separate written commercial license from the licensor.
+license. Personal, noncommercial use permitted by the license is free of license
+fees. Educational, research, charitable, and other noncommercial uses permitted
+by the license are also welcome.
 
-The original or modified software may not be sold or offered as a paid listing
-through the Apple App Store, Mac App Store, Setapp, or any other third-party
-software marketplace without that separate commercial license. Redistributors
-must include both [the license](LICENSE) and the [required notice](NOTICE).
+Any commercial use, sale, paid distribution, monetized offering, or submission
+to the Apple App Store, Mac App Store, Setapp, or another third-party software
+marketplace requires the licensor's **prior written approval** and a separate
+commercial license. Commercial licenses are reviewed case by case and require
+an agreed licensing fee. See the [commercial licensing policy](COMMERCIAL-LICENSE.md)
+and submit a [commercial license request](https://github.com/maow318/DMGplayer-open/issues/new?template=commercial-license.yml)
+before any commercial release or store submission.
+
+Redistributors must include the [license](LICENSE), [required notice](NOTICE),
+and [commercial licensing policy](COMMERCIAL-LICENSE.md).
 
 本项目采用 PolyForm Noncommercial 1.0.0 源码可见、仅限非商业用途的许可协议，
-并非 OSI 定义的开源协议。个人学习、研究、教育、公益等协议允许的非商业用途可以
-使用、修改和分发；任何商业销售、付费分发，或将本软件作为商业产品或服务的一部分，
-都必须事先取得许可方单独出具的书面商业授权。
+并非 OSI 定义的开源协议。协议允许的个人非商业用途免费使用，不收取许可费；学习、
+研究、教育、公益等其他协议允许的非商业用途同样可以使用、修改和分发。
 
-未经单独书面商业授权，不得将原版或修改版在 Apple App Store、Mac App Store、
-Setapp 或任何其他第三方软件平台上销售或作为付费项目上架。再次分发时必须同时保留
-[完整许可证](LICENSE)与[必要声明](NOTICE)。
+任何商业使用、销售、付费分发、变现行为，或提交到 Apple App Store、Mac App Store、
+Setapp 及其他第三方软件平台，都必须事先取得许可方书面同意并签订单独的商业授权。
+商业授权逐项审核，并按双方约定收取授权费。请先阅读[商业授权政策](COMMERCIAL-LICENSE.md)
+并提交[商业授权申请](https://github.com/maow318/DMGplayer-open/issues/new?template=commercial-license.yml)；
+在收到书面授权并满足授权费等全部条件之前，不得进行商业发布或上架。
+
+再次分发时必须同时保留[完整许可证](LICENSE)、[必要声明](NOTICE)及
+[商业授权政策](COMMERCIAL-LICENSE.md)。
 
 ## Contributing / 参与贡献
 

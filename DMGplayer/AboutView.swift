@@ -12,6 +12,9 @@ struct AboutView: View {
     private static let sourceCodeURL = URL(
         string: "https://github.com/maow318/DMGplayer-open"
     )!
+    private static let commercialLicenseURL = URL(
+        string: "https://github.com/maow318/DMGplayer-open/issues/new?template=commercial-license.yml"
+    )!
 
     private var version: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
@@ -45,15 +48,29 @@ struct AboutView: View {
             VStack(spacing: 5) {
                 Text(verbatim: "Copyright © 2026 DMGplayer contributors")
                 Text(verbatim: "PolyForm Noncommercial 1.0.0 · No warranty")
+                Text(verbatim: "Personal noncommercial use is free")
+                Text(verbatim: "Commercial use requires written approval and a license fee")
+                    .multilineTextAlignment(.center)
 
-                Link(destination: Self.sourceCodeURL) {
-                    Label {
-                        Text(verbatim: "Source Code")
-                    } icon: {
-                        Image(systemName: "chevron.left.forwardslash.chevron.right")
+                HStack(spacing: 16) {
+                    Link(destination: Self.sourceCodeURL) {
+                        Label {
+                            Text(verbatim: "Source Code")
+                        } icon: {
+                            Image(systemName: "chevron.left.forwardslash.chevron.right")
+                        }
                     }
+                    .accessibilityHint("Opens the public source repository")
+
+                    Link(destination: Self.commercialLicenseURL) {
+                        Label {
+                            Text(verbatim: "Commercial License")
+                        } icon: {
+                            Image(systemName: "doc.badge.gearshape")
+                        }
+                    }
+                    .accessibilityHint("Opens a commercial license request on GitHub")
                 }
-                .accessibilityHint("Opens the public source repository")
             }
             .font(.footnote)
             .foregroundStyle(.secondary)
@@ -88,7 +105,7 @@ struct AboutView: View {
             .padding(.horizontal, 22)
             .frame(height: 54)
         }
-        .frame(width: 360, height: 344)
+        .frame(width: 360, height: 382)
         .background(Color(nsColor: .windowBackgroundColor))
         .background {
             WindowTitleUpdater(title: languageStore.localized("关于 DMGplayer"))
