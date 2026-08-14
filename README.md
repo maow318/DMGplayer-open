@@ -119,8 +119,10 @@ DMGplayer.xcodeproj/   Xcode project
 Info.plist             Document and exported-type declarations
 ```
 
-Generated builds, DerivedData, Xcode user state, local agent settings, signing
-material, and release packages are intentionally excluded from version control.
+Generated development builds, DerivedData, Xcode user state, local agent
+settings, and signing material are intentionally excluded from version control.
+The verified payload in `release-assets/` is retained only so GitHub Actions can
+publish the downloadable DMG to the matching GitHub Release.
 
 ## License / 源码许可
 

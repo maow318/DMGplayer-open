@@ -1,0 +1,50 @@
+name: Publish v1.0.2 release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-v1.0.2.yml
+      - release-assets/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release assets
+        uses: actions/checkout@v4
+
+      - name: Verify DMG checksum
+        working-directory: release-assets
+        run: sha256sum --check SHA256SUMS
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.2 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload v1.0.2 \
+              "release-assets/DMGplayer-1.0.2-macOS-14-universal.dmg#DMGplayer 1.0.2 for macOS 14+" \
+              release-assets/SHA256SUMS \
+              --clobber \
+              --repo "$GITHUB_REPOSITORY"
+            gh release edit v1.0.2 \
+              --title "DMGplayer 1.0.2" \
+              --notes-file release-assets/RELEASE-NOTES.md \
+              --latest \
+              --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create v1.0.2 \
+              "release-assets/DMGplayer-1.0.2-macOS-14-universal.dmg#DMGplayer 1.0.2 for macOS 14+" \
+              release-assets/SHA256SUMS \
+              --verify-tag \
+              --title "DMGplayer 1.0.2" \
+              --notes-file release-assets/RELEASE-NOTES.md \
+              --latest \
+              --repo "$GITHUB_REPOSITORY"
+          fi
