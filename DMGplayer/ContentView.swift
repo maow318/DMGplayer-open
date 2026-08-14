@@ -76,7 +76,7 @@ struct ContentView: View {
                 .help("构建磁盘映像 (⌘B)；下拉可选“构建并暂停”先检查内容")
             }
         }
-        .toolbar(removing: .title)
+        .hidingToolbarTitleWhenSupported()
         .sheet(isPresented: $showLicensePicker) {
             LicensePickerSheet(isPresented: $showLicensePicker)
                 .environmentObject(languageStore)

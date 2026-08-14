@@ -44,7 +44,7 @@ struct AboutView: View {
 
             VStack(spacing: 5) {
                 Text(verbatim: "Copyright © 2026 DMGplayer contributors")
-                Text(verbatim: "GNU AGPL v3-or-later · No warranty")
+                Text(verbatim: "PolyForm Noncommercial 1.0.0 · No warranty")
 
                 Link(destination: Self.sourceCodeURL) {
                     Label {

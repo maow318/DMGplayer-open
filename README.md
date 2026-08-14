@@ -3,9 +3,9 @@
   <h1>DMGplayer</h1>
   <p>A native visual DMG designer and builder for macOS.<br>原生、可视化的 macOS 磁盘映像设计与构建工具。</p>
 
-  [![macOS 26.5+](https://img.shields.io/badge/macOS-26.5%2B-black?logo=apple)](https://www.apple.com/macos/)
+  [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-black?logo=apple)](https://www.apple.com/macos/)
   [![Swift](https://img.shields.io/badge/Swift-SwiftUI-F05138?logo=swift&logoColor=white)](https://www.swift.org/)
-  [![License: AGPL v3+](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](LICENSE)
+  [![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE)
 </div>
 
 DMGplayer turns a folder or application into a polished macOS disk image without
@@ -34,7 +34,7 @@ DMGplayer 可以把 App、文件或文件夹制作成带有完整 Finder 布局�
 
 ## Requirements / 系统要求
 
-- macOS 26.5 or later
+- macOS 14.0 Sonoma or later
 - Xcode 26 or later for building from source
 - Apple Silicon or Intel Mac; the downloadable build is Universal
 
@@ -122,19 +122,30 @@ Info.plist             Document and exported-type declarations
 Generated builds, DerivedData, Xcode user state, local agent settings, signing
 material, and release packages are intentionally excluded from version control.
 
-## License / 开源协议
+## License / 源码许可
 
 DMGplayer is licensed under the
-[GNU Affero General Public License v3.0 or later](LICENSE).
+[PolyForm Noncommercial License 1.0.0](LICENSE).
 
-This is a strong copyleft license. If you distribute a modified version, you
-must provide the corresponding source under the same license. If a modified
-version is used to provide functionality to users over a network, those users
-must also be offered the corresponding source as required by AGPL section 13.
+This is a **source-available, noncommercial** license rather than an open-source
+license. Personal, educational, research, charitable, and other noncommercial
+uses permitted by the license are welcome. Commercial sale, paid distribution,
+or offering DMGplayer as part of a commercial product or service requires a
+separate written commercial license from the licensor.
 
-本项目采用 GNU AGPL v3.0-or-later 强传染性开源协议。分发修改版时必须同时提供对应
-源码并继续使用兼容的同类许可证；如果修改版通过网络向用户提供服务，也必须依照
-AGPL 第 13 条向这些用户提供对应源码。
+The original or modified software may not be sold or offered as a paid listing
+through the Apple App Store, Mac App Store, Setapp, or any other third-party
+software marketplace without that separate commercial license. Redistributors
+must include both [the license](LICENSE) and the [required notice](NOTICE).
+
+本项目采用 PolyForm Noncommercial 1.0.0 源码可见、仅限非商业用途的许可协议，
+并非 OSI 定义的开源协议。个人学习、研究、教育、公益等协议允许的非商业用途可以
+使用、修改和分发；任何商业销售、付费分发，或将本软件作为商业产品或服务的一部分，
+都必须事先取得许可方单独出具的书面商业授权。
+
+未经单独书面商业授权，不得将原版或修改版在 Apple App Store、Mac App Store、
+Setapp 或任何其他第三方软件平台上销售或作为付费项目上架。再次分发时必须同时保留
+[完整许可证](LICENSE)与[必要声明](NOTICE)。
 
 ## Contributing / 参与贡献
 

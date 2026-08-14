@@ -28,11 +28,20 @@ struct MeshBackgroundView: View {
     let colors: [CodableColor]
     let points: [CodablePoint]
 
+    @ViewBuilder
     var body: some View {
-        MeshGradient(
-            width: 3, height: 3,
-            points: points.map { SIMD2(Float($0.x), Float($0.y)) },
-            colors: colors.map(\.color)
-        )
+        if #available(macOS 15.0, *) {
+            MeshGradient(
+                width: 3, height: 3,
+                points: points.map { SIMD2(Float($0.x), Float($0.y)) },
+                colors: colors.map(\.color)
+            )
+        } else {
+            LinearGradient(
+                colors: colors.map(\.color),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+        }
     }
 }
